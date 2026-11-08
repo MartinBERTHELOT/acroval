@@ -103,8 +103,7 @@ nav.menu a.cta { color: var(--on-pine); background: var(--pine); font-weight: 60
 .landscape { display: block; width: 100%; height: auto; margin-top: -40px; }
 .landscape .far { fill: var(--ridge); }
 .landscape .near { fill: var(--pine); }
-.landscape .arc { fill: none; stroke: var(--glacier); stroke-width: 2.5; stroke-dasharray: 1400; stroke-dashoffset: 0; animation: jump 2.2s cubic-bezier(.3,.6,.3,1) .3s both; }
-.landscape .dot { fill: var(--glacier); }
+.landscape .peak { fill: none; stroke: var(--glacier); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; opacity: .9; }
 .landscape .alt-label { fill: var(--on-pine); font-family: var(--body); font-size: 14px; font-weight: 600; letter-spacing: .04em; }
 @keyframes jump { from { stroke-dashoffset: 1400; } to { stroke-dashoffset: 0; } }
 @media (prefers-reduced-motion: reduce) { .landscape .arc { animation: none; } }
@@ -296,8 +295,8 @@ footer .wrap { padding-block: 40px; display: flex; justify-content: space-betwee
     <svg class="landscape" viewBox="0 0 1440 360" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Silhouette des montagnes de Val d'Isère traversée par la trajectoire d'un saut">
       <path class="far" d="M0 250 L120 200 L210 230 L330 150 L430 210 L560 120 L660 190 L780 110 L900 180 L1010 130 L1130 200 L1260 140 L1360 190 L1440 160 L1440 360 L0 360 Z"/>
       <path class="near" d="M0 300 L140 260 L250 285 L380 215 L470 255 L600 190 L720 250 L820 225 L940 270 L1060 205 L1180 260 L1300 230 L1440 270 L1440 360 L0 360 Z"/>
-      <path class="arc" d="M440 262 C 560 -40, 820 -40, 940 270"/>
-      <circle class="dot" cx="690" cy="34" r="7"/>
+      <polyline class="peak" points="552,250 600,222 648,248"/>
+      <polyline class="peak" points="1032,234 1060,218 1088,236"/>
     </svg>
   </section>
 

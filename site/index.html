@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Acroval Val d'Isère · Stages de trampoline et de gym en altitude</title>
+<meta name="description" content="Acroval organise à Val d'Isère des stages d'oxygénation et d'entraînement pour les clubs de trampoline, gymnastique et tumbling : hébergement en pension complète, aire d'entraînement, activités de la station. Tous âges, durée à la carte.">
+<link rel="canonical" href="https://martinberthelot.github.io/acroval/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Acroval Val d'Isère">
+<meta property="og:title" content="Acroval · Stages d'oxygénation et d'entraînement à Val d'Isère">
+<meta property="og:description" content="Acroval organise à Val d'Isère des stages d'oxygénation et d'entraînement pour les clubs de trampoline, gymnastique et tumbling : hébergement en pension complète, aire d'entraînement, activités de la station. Tous âges, durée à la carte.">
+<meta property="og:url" content="https://martinberthelot.github.io/acroval/">
+<meta property="og:image" content="https://martinberthelot.github.io/acroval/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0E5642">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;padding:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<style>
+@font-face { font-family: "Montserrat"; src: url("fonts/montserrat.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Public Sans"; src: url("fonts/public-sans-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Public Sans"; src: url("fonts/public-sans-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Public Sans"; src: url("fonts/public-sans-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Public Sans"; src: url("fonts/public-sans-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+
+/* Layout : une page qui défile, colonne de lecture alignée à gauche, couleurs et lettres reprises du logo Acroval */
+:root {
+  --sky: #F4F8F6;        /* fond : air d'altitude, légèrement vert */
+  --snow: #FFFFFF;       /* surfaces */
+  --ink: #0C3B2F;        /* texte : vert sapin foncé */
+  --pine: #0E5642;       /* vert du logo */
+  --granite: #55675F;    /* texte secondaire */
+  --ridge: #D3E0DA;      /* lignes, crêtes lointaines */
+  --glacier: #3CB4DB;    /* bleu du logo, pour les tracés */
+  --accent: #1683AA;     /* bleu du logo assombri, lisible en texte */
+  --meadow: #E2EEE8;     /* aplats */
+  --ph: #E5EEEA;         /* emplacements photo */
+  --on-pine: #F4F8F6;
+  --display: "Montserrat", "Avenir Next", "Century Gothic", Arial, sans-serif;
+  --body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --max: 1160px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --sky: #0B1F19; --snow: #112A22; --ink: #E7F0EC; --pine: #0E5642; --granite: #98AEA5; --ridge: #24423A;
+  --glacier: #3CB4DB; --accent: #5CC6E8; --meadow: #12302A; --ph: #173A31; --on-pine: #F4F8F6; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --sky: #0B1F19; --snow: #112A22; --ink: #E7F0EC; --pine: #0E5642; --granite: #98AEA5; --ridge: #24423A;
+  --glacier: #3CB4DB; --accent: #5CC6E8; --meadow: #12302A; --ph: #173A31; --on-pine: #F4F8F6; color-scheme: dark }
+.logo-dark { display: none; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .logo-light { display: none; } :root:not([data-theme="light"]) .logo-dark { display: block; } }
+:root[data-theme="dark"] .logo-light { display: none; }
+:root[data-theme="dark"] .logo-dark { display: block; }
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { background: var(--sky); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: var(--max); margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-height: 1.02; }
+h2 { font-size: clamp(1.9rem, 4.2vw, 3.1rem); font-weight: 700; letter-spacing: -0.015em; }
+h3 { font-size: 1.2rem; font-weight: 700; line-height: 1.25; }
+p { margin: 0; }
+a { color: inherit; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+.todo { background: var(--meadow); color: var(--ink); padding: 0 .3em; border-radius: 3px; font-style: italic; }
+
+/* En-tête */
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--sky); }
+header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: color-mix(in srgb, var(--sky) 88%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--ridge); }
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px 28px; padding-block: 12px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.brand img { height: 52px; width: auto; max-width: none; }
+nav.menu { display: flex; gap: 6px; align-items: center; }
+nav.menu a { text-decoration: none; font-size: .95rem; color: var(--granite); padding: 8px 12px; border-radius: 999px; white-space: nowrap; }
+nav.menu a[aria-current="page"] { color: var(--ink); background: var(--meadow); font-weight: 600; }
+nav.menu a:hover { color: var(--ink); }
+nav.menu a.cta { color: var(--on-pine); background: var(--pine); font-weight: 600; margin-left: 6px; }
+@media (max-width: 920px) { nav.menu { width: 100%; overflow-x: auto; scrollbar-width: none; margin-inline: -4px; padding-bottom: 2px; } nav.menu a.cta { margin-left: auto; } }
+
+/* Hero */
+.hero { position: relative; overflow: hidden; }
+.hero .wrap { padding-block: clamp(56px, 9vw, 110px) 0; position: relative; z-index: 1; }
+.hero h1 { font-size: clamp(2.1rem, 4.6vw, 3.9rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.05; max-width: 15ch; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 40px; align-items: center; }
+.hero-photo { margin: 0; justify-self: end; width: 100%; max-width: 460px; }
+.hero-photo img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; clip-path: polygon(50% 0, 100% 34%, 100% 100%, 0 100%, 0 34%); }
+.hero-photo figcaption { margin-top: 10px; font-size: .85rem; color: var(--granite); text-align: right; }
+@media (max-width: 860px) { .hero-grid { grid-template-columns: minmax(0, 1fr); } .hero-photo { justify-self: start; max-width: 340px; } .hero-photo figcaption { text-align: left; } }
+.hero-lede { margin-top: 28px; max-width: 46ch; font-size: clamp(1.05rem, 1.6vw, 1.25rem); color: var(--granite); }
+.hero-actions { margin-top: 32px; display: flex; gap: 14px; flex-wrap: wrap; }
+.btn { display: inline-flex; align-items: center; padding: 14px 22px; border-radius: 999px; font-weight: 600; text-decoration: none; font-size: 1rem; border: 1.5px solid var(--ink); }
+.btn.primary { background: var(--pine); color: var(--on-pine); border-color: var(--pine); }
+.btn.ghost { background: transparent; color: var(--ink); }
+.landscape { display: block; width: 100%; height: auto; margin-top: -40px; }
+.landscape .far { fill: var(--ridge); }
+.landscape .near { fill: var(--pine); }
+.landscape .arc { fill: none; stroke: var(--glacier); stroke-width: 2.5; stroke-dasharray: 1400; stroke-dashoffset: 0; animation: jump 2.2s cubic-bezier(.3,.6,.3,1) .3s both; }
+.landscape .dot { fill: var(--glacier); }
+.landscape .alt-label { fill: var(--on-pine); font-family: var(--body); font-size: 14px; font-weight: 600; letter-spacing: .04em; }
+@keyframes jump { from { stroke-dashoffset: 1400; } to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) { .landscape .arc { animation: none; } }
+
+/* Bandeau sombre sous la montagne */
+.base { background: var(--pine); color: var(--on-pine); }
+.base .offer-title { padding-block: 8px 28px; color: var(--on-pine); font-size: clamp(1.7rem, 3.4vw, 2.5rem); }
+.base .wrap:not(.offer-title) { padding-block: 0 72px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; }
+.base .item h3 { margin-bottom: 8px; }
+.base .item p { color: color-mix(in srgb, var(--on-pine) 80%, var(--pine)); font-size: .97rem; }
+.base .item .todo { background: color-mix(in srgb, var(--on-pine) 16%, var(--pine)); color: var(--on-pine); }
+@media (max-width: 900px) { .base .wrap { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .base .wrap { grid-template-columns: minmax(0, 1fr); } }
+
+/* Sections */
+section.block .wrap { padding-block: clamp(72px, 10vw, 128px); }
+.split { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(32px, 6vw, 88px); align-items: start; }
+@media (max-width: 860px) { .split { grid-template-columns: minmax(0, 1fr); } }
+.lead { font-size: 1.15rem; color: var(--granite); max-width: 52ch; margin-top: 20px; }
+.prose { display: grid; gap: 18px; max-width: 60ch; }
+
+/* Station : échelle d'altitude */
+.scale { list-style: none; margin: 0; padding: 0; border-left: 2px solid var(--ink); }
+.scale li { position: relative; display: grid; grid-template-columns: 7.2rem minmax(0, 1fr); gap: 20px; padding: 18px 0 18px 24px; border-bottom: 1px solid var(--ridge); }
+.scale li::before { content: ""; position: absolute; left: -7px; top: 26px; width: 12px; height: 12px; border-radius: 50%; background: var(--sky); border: 2px solid var(--ink); }
+.scale li.here::before { background: var(--glacier); border-color: var(--glacier); }
+.scale .m { font-family: var(--display); font-weight: 700; font-size: 1.5rem; font-variant-numeric: tabular-nums; line-height: 1.2; }
+.scale .m small { font-size: .85rem; font-weight: 600; color: var(--granite); }
+.scale .t { color: var(--granite); }
+.scale .t b { color: var(--ink); font-weight: 600; display: block; }
+@media (max-width: 480px) { .scale li { grid-template-columns: minmax(0, 1fr); gap: 4px; } }
+
+/* Organisation */
+.org { background: var(--snow); border-block: 1px solid var(--ridge); }
+.week { list-style: none; padding: 0; margin: 40px 0 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border-top: 2px solid var(--ink); }
+.week li { padding: 20px 20px 0 0; }
+.week .when { font-family: var(--display); font-weight: 600; font-size: .9rem; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); }
+.week p { color: var(--granite); margin-top: 6px; font-size: .97rem; }
+@media (max-width: 800px) { .week { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 8px; } }
+.gallery { margin-top: 32px; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); grid-auto-rows: 150px; gap: 12px; }
+.ph { background: var(--ph); border-radius: 6px; position: relative; overflow: hidden; display: flex; align-items: flex-end; padding: 14px; }
+.ph::before { content: ""; position: absolute; inset: auto 0 0 0; height: 55%; background: var(--ridge); clip-path: polygon(0 100%, 0 60%, 18% 30%, 32% 55%, 52% 10%, 70% 48%, 84% 28%, 100% 58%, 100% 100%); opacity: .7; }
+.ph img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.ph.has-img::before { display: none; }
+.ph span { position: relative; font-size: .85rem; font-weight: 600; background: var(--snow); padding: 4px 10px; border-radius: 999px; }
+.g1 { grid-column: span 3; grid-row: span 2; } .g2 { grid-column: span 1; grid-row: span 2; } .g3 { grid-column: span 2; grid-row: span 2; }
+@media (max-width: 700px) { .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 130px; } .g1 { grid-column: span 2; } .g2, .g3 { grid-column: span 1; grid-row: span 2; } }
+
+/* Ce qui est compris */
+.incl { margin-top: 32px; } .incl.incl-2 { margin-top: 16px; }
+.incl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 48px; }
+.incl > div { padding-block: 26px; border-top: 1px solid var(--ridge); display: grid; gap: 10px; align-content: start; }
+.incl h3 { font-size: 1.3rem; }
+.incl ul { margin: 0; padding-left: 1.1em; color: var(--granite); display: grid; gap: 4px; }
+.incl p { color: var(--granite); }
+.incl .note { font-size: .92rem; color: var(--ink); background: var(--meadow); padding: 8px 12px; border-radius: 6px; }
+@media (max-width: 760px) { .incl { grid-template-columns: minmax(0, 1fr); } }
+.extras { margin-top: 72px; display: grid; grid-template-columns: minmax(0, 1fr); max-width: 720px; gap: 20px; align-items: stretch; }
+.extras > div { padding: 28px; border-radius: 10px; display: grid; gap: 12px; align-content: start; }
+.extras .opt { background: var(--meadow); }
+.extras .excl { border: 1.5px dashed var(--ridge); }
+.extras h2.sub { margin-top: 0 !important; }
+.extras p { color: var(--granite); }
+.extras ul { margin: 0; padding-left: 1.1em; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 32px; }
+@media (max-width: 560px) { .extras ul { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 760px) { .extras { grid-template-columns: minmax(0, 1fr); } }
+.org h2.sub { font-size: clamp(1.5rem, 3vw, 2.1rem); margin-top: 72px; }
+
+/* Station : photos */
+section.block .wrap.st-wrap { padding-top: 0; }
+.st-link { color: var(--accent); font-weight: 600; text-decoration: none; justify-self: start; }
+.st-link:hover { text-decoration: underline; }
+.st-all { padding-top: 48px; border-top: 1px solid var(--ridge); display: grid; gap: 12px; }
+.st-all > p { color: var(--granite); }
+.act-list { list-style: none; margin: 16px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.act-list a { display: grid; gap: 2px; height: 100%; padding: 14px 16px; border: 1px solid var(--ridge); border-radius: 8px; background: var(--snow); text-decoration: none; }
+.act-list a:hover { border-color: var(--accent); }
+.act-list b { font-weight: 600; color: var(--ink); }
+.act-list span { font-size: .9rem; color: var(--granite); }
+@media (max-width: 860px) { .act-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .act-list { grid-template-columns: minmax(0, 1fr); } }
+#station > .wrap:first-child { padding-bottom: 40px; }
+.st-sec { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(28px, 5vw, 72px); align-items: center; padding-block: 48px; border-top: 1px solid var(--ridge); }
+.st-sec.flip .st-text { order: 2; }
+.st-text { display: grid; gap: 14px; max-width: 46ch; }
+.st-name { font-size: 1rem; font-weight: 600; color: var(--accent); }
+.st-claim { font-family: var(--display); font-weight: 700; font-size: clamp(1.6rem, 3vw, 2.3rem); line-height: 1.1; letter-spacing: -0.015em; text-wrap: balance; }
+.st-text p:not(.st-claim) { color: var(--granite); }
+.st-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: clamp(140px, 16vw, 210px); gap: 10px; }
+.st-grid img { width: 100%; height: 100%; max-width: 100%; object-fit: cover; border-radius: 6px; display: block; }
+.st-grid .tall { grid-row: span 2; }
+.st-grid .wide { grid-column: span 2; }
+@media (max-width: 860px) { .st-sec { grid-template-columns: minmax(0, 1fr); } .st-sec.flip .st-text { order: 0; } }
+.credits { margin-top: 16px; font-size: .82rem; color: var(--granite); }
+
+/* Témoignages : clubs */
+.clubs { margin-top: 48px; display: grid; }
+.club { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 36px; padding-block: 36px; border-top: 1px solid var(--ridge); align-items: start; }
+.club img { width: 100%; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 15%; border-radius: 6px; display: block; }
+.club h3 { font-size: clamp(1.5rem, 2.8vw, 2.2rem); line-height: 1.1; }
+.club .body { display: grid; gap: 14px; max-width: 62ch; }
+.level { display: flex; flex-wrap: wrap; gap: 8px; }
+.level span { font-size: .85rem; font-weight: 600; padding: 5px 12px; border-radius: 999px; background: var(--meadow); color: var(--ink); }
+.level span.top { background: var(--pine); color: var(--on-pine); }
+.staff { color: var(--granite); }
+.staff b { color: var(--ink); font-weight: 600; }
+.club .said { margin: 0; font-family: var(--display); font-weight: 600; font-size: 1.2rem; line-height: 1.4; }
+.club .said::before { content: "« "; color: var(--accent); }
+.club .said::after { content: " »"; color: var(--accent); }
+.club .ctx { color: var(--granite); }
+.club a.listen-link { color: var(--accent); font-weight: 600; text-decoration: none; }
+.club a.listen-link:hover { text-decoration: underline; }
+@media (max-width: 700px) { .club { grid-template-columns: 96px minmax(0, 1fr); gap: 18px; padding-block: 28px; } }
+
+/* Contact */
+.contact { scroll-margin-top: 110px; margin-top: 72px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; padding-top: 40px; border-top: 1px solid var(--ridge); }
+@media (max-width: 760px) { .contact { grid-template-columns: minmax(0, 1fr); } }
+.lines { display: grid; gap: 14px; }
+.line { display: grid; grid-template-columns: 7rem minmax(0, 1fr) auto; gap: 12px; align-items: baseline; padding-bottom: 14px; border-bottom: 1px solid var(--ridge); }
+.line .k { color: var(--granite); font-size: .92rem; }
+.line .v { font-weight: 600; overflow-wrap: anywhere; user-select: all; }
+.copy { font: inherit; font-size: .85rem; background: none; border: 1px solid var(--ridge); color: var(--granite); border-radius: 999px; padding: 4px 12px; cursor: pointer; }
+.copy:hover { color: var(--ink); border-color: var(--granite); }
+@media (max-width: 480px) { .line { grid-template-columns: minmax(0, 1fr) auto; } .line .k { grid-column: 1 / -1; } }
+
+/* Témoignages */
+.quotes { margin-top: 48px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; }
+@media (max-width: 900px) { .quotes { grid-template-columns: minmax(0, 1fr); gap: 32px; } }
+figure.q { margin: 0; padding-top: 22px; border-top: 2px solid var(--ink); display: grid; gap: 18px; align-content: start; }
+figure.q blockquote, figure.q > p { margin: 0; font-size: 1.12rem; line-height: 1.55; }
+figure.q .qimg { width: 100%; max-width: 100%; aspect-ratio: 5 / 6; object-fit: cover; border-radius: 6px; display: block; }
+figure.q blockquote.said { font-family: var(--display); font-weight: 600; font-size: 1.2rem; line-height: 1.4; }
+figure.q blockquote.said::before { content: "« "; color: var(--accent); }
+figure.q blockquote.said::after { content: " »"; color: var(--accent); }
+.listen { margin-top: 56px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.listen a { display: grid; gap: 4px; padding: 18px 20px; border: 1px solid var(--ridge); border-radius: 8px; text-decoration: none; background: var(--snow); }
+.listen a:hover { border-color: var(--accent); }
+.listen b { font-family: var(--display); font-weight: 700; }
+.listen span { color: var(--granite); font-size: .95rem; }
+.listen em { font-style: normal; color: var(--accent); font-weight: 600; font-size: .9rem; }
+@media (max-width: 700px) { .listen { grid-template-columns: minmax(0, 1fr); } }
+figure.q figcaption { color: var(--granite); font-size: .95rem; }
+figure.q figcaption b { color: var(--ink); display: block; font-weight: 600; }
+
+/* Références */
+.refs { background: var(--meadow); }
+.reflist { list-style: none; margin: 40px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 48px; }
+.reflist li { padding: 18px 0; border-bottom: 1px solid color-mix(in srgb, var(--granite) 30%, transparent); display: grid; gap: 2px; }
+.reflist b { font-family: var(--display); font-weight: 700; font-size: 1.15rem; }
+.reflist span { color: var(--granite); font-size: .95rem; }
+@media (max-width: 760px) { .reflist { grid-template-columns: minmax(0, 1fr); } }
+.logos { margin-top: 40px; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; }
+.logos div { aspect-ratio: 3 / 2; max-width: 100%; border: 1.5px dashed color-mix(in srgb, var(--granite) 55%, transparent); border-radius: 6px; display: grid; place-items: center; text-align: center; padding: 8px; color: var(--granite); font-size: .85rem; }
+@media (max-width: 800px) { .logos { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+footer .wrap { padding-block: 40px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; color: var(--granite); font-size: .92rem; border-top: 1px solid var(--ridge); }
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#accueil" data-go="accueil" aria-label="Acroval, retour en haut">
+      <img class="logo-light" src="img/logo-light.png" alt="Acroval Val d'Isère"><img class="logo-dark" src="img/logo-dark.png" alt="Acroval Val d'Isère">
+    </a>
+    <nav class="menu" aria-label="Pages">
+      <a href="#accueil" data-go="accueil">Accueil</a>
+      <a href="#station" data-go="station">La station</a>
+      <a href="#organisation" data-go="organisation">Organisation</a>
+      <a href="#temoignages" data-go="temoignages">Témoignages</a>
+      <a class="cta" href="#contact" data-go="contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="accueil" data-view="accueil">
+    <div class="wrap hero-grid">
+      <div>
+      <h1>Stages d'oxygénation et d'entraînement</h1>
+      <p class="hero-lede">À Val d'Isère, pour les clubs de trampoline, de gym et de tumbling, sans limite d'âge. Nous gérons le logement, les repas, l'aire d'entraînement et les sorties en montagne. Vos coachs n'ont plus qu'à entraîner.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#contact" data-go="contact">Organiser un stage</a>
+        <a class="btn ghost" href="#stage">Notre offre</a>
+      </div>
+      </div>
+      <figure class="hero-photo"><img fetchpriority="high" src="img/saut.webp" alt="Un trampoliniste en plein saut, bras écartés, devant le soleil"></figure>
+    </div>
+    <svg class="landscape" viewBox="0 0 1440 360" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Silhouette des montagnes de Val d'Isère traversée par la trajectoire d'un saut">
+      <path class="far" d="M0 250 L120 200 L210 230 L330 150 L430 210 L560 120 L660 190 L780 110 L900 180 L1010 130 L1130 200 L1260 140 L1360 190 L1440 160 L1440 360 L0 360 Z"/>
+      <path class="near" d="M0 300 L140 260 L250 285 L380 215 L470 255 L600 190 L720 250 L820 225 L940 270 L1060 205 L1180 260 L1300 230 L1440 270 L1440 360 L0 360 Z"/>
+      <path class="arc" d="M440 262 C 560 -40, 820 -40, 940 270"/>
+      <circle class="dot" cx="690" cy="34" r="7"/>
+    </svg>
+  </section>
+
+  <section class="base" id="stage" data-view="accueil" aria-labelledby="stage-title">
+    <h2 id="stage-title" class="wrap offer-title">Notre offre</h2>
+    <div class="wrap">
+      <div class="item">
+        <h3>Hébergement et repas</h3>
+        <p>Village vacances Cévéo en pension complète, chambres de 1 à 4 personnes. Self matin, midi et soir, pique-nique possible.</p>
+      </div>
+      <div class="item">
+        <h3>Aire d'entraînement Acroval</h3>
+        <p>Accès libre et illimité : tapis, piste AirTrack de 10 m et trampolines, en plein air.</p>
+      </div>
+      <div class="item">
+        <h3>Activités de la station</h3>
+        <p>Piscine, golf, tir à l'arc, squash… Profitez de toute la station entre deux séances, sans supplément.</p>
+      </div>
+      <div class="item">
+        <h3>Dates et durée</h3>
+        <p>Stages en juillet et août. La durée s'adapte à votre programme : quelques jours, une semaine ou plus. Tous les âges sont acceptés.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="station" data-view="station" aria-labelledby="station-title">
+    <div class="wrap">
+      <div>
+        <h2 id="station-title">Val d'Isère, l'été.</h2>
+        <p class="lead">En hiver, tout le monde connaît Val d'Isère. L'été, la station change de visage : alpages verts, lacs d'altitude, torrents et sommets à perte de vue. C'est le moment idéal pour un stage, au calme, avec toute la station à disposition.</p>
+      </div>
+
+    </div>
+    <div class="wrap st-wrap">
+      <article class="st-sec">
+        <div class="st-text">
+          <h3 class="st-name">La station</h3>
+          <p class="st-claim">Un vrai village de montagne</p>
+          <p>Maisons de pierre et de bois, balcons fleuris, terrasses au soleil : l'été, Val d'Isère retrouve son allure de village savoyard. Le centre aquasportif et le parc des sports du Manchet réunissent piscine, escalade, tennis et terrains de sport, Sur place, tout se fait à pied, et des bus gratuits desservent toute la station.</p>
+          <a class="st-link" href="https://www.valdisere.com/envies/val-disere-authentique-village-alpin/" target="_blank" rel="noopener">Découvrir le village sur valdisere.com</a>
+        </div>
+        <div class="st-grid">
+          <img loading="lazy" decoding="async" class="tall" src="img/wm-vieux-village.webp" alt="Le vieux village de Val d'Isère : chalets en pierre et en bois au pied du clocher de l'église Saint-Bernard, montagne verte en arrière-plan">
+          <img loading="lazy" decoding="async" src="img/vd-pickleball.webp" alt="Courts de tennis et de pickleball du parc des sports du Manchet, montagnes en arrière-plan">
+          <img loading="lazy" decoding="async" src="img/vd-vtt.webp" alt="Vététiste dans un virage, le village de Val d'Isère en contrebas dans la vallée">
+        </div>
+      </article>
+      <article class="st-sec flip">
+        <div class="st-text">
+          <h3 class="st-name">Les activités</h3>
+          <p class="st-claim">De quoi remplir les après-midis</p>
+          <p>Bike park, via ferrata, balades à cheval, yoga en plein air, escalade, tennis : la station propose un large choix d'activités d'été. Une partie est comprise dans le séjour, le reste se réserve en supplément. Vos athlètes changent d'air sans perdre le rythme.</p>
+          <a class="st-link" href="https://www.valdisere.com/envies/activites-ete/" target="_blank" rel="noopener">Voir les activités d'été sur valdisere.com</a>
+        </div>
+        <div class="st-grid">
+          <img loading="lazy" decoding="async" class="wide" src="img/vd-ferrata.webp" alt="Deux grimpeurs casqués progressent sur une via ferrata en forêt">
+          <img loading="lazy" decoding="async" src="img/vd-cheval.webp" alt="Deux cavalières traversent un torrent de montagne">
+          <img loading="lazy" decoding="async" src="img/vd-yoga.webp" alt="Cours de yoga en plein air dans la vallée du Manchet">
+        </div>
+      </article>
+      <article class="st-sec">
+        <div class="st-text">
+          <h3 class="st-name">La montagne</h3>
+          <p class="st-claim">Aux portes de la Vanoise</p>
+          <p>Val d'Isère touche le parc national de la Vanoise, le premier parc national créé en France. Sentiers balisés, lacs d'altitude comme celui de l'Ouillette, bouquetins et marmottes : une randonnée à la journée suffit pour en prendre plein les yeux. Plus haut, la route du col de l'Iseran mène au plus haut col routier des Alpes.</p>
+          <a class="st-link" href="https://www.valdisere.com/val-disere-en-ete/le-parc-national-de-la-vanoise/" target="_blank" rel="noopener">Le parc national de la Vanoise sur valdisere.com</a>
+        </div>
+        <div class="st-grid">
+          <img loading="lazy" decoding="async" class="wide" src="img/vd-rando.jpg" alt="Randonneurs sur un sentier entre les rochers et l'herbe dans la vallée du Manchet">
+          <img loading="lazy" decoding="async" class="tall" src="img/vd-ouillette-ete.webp" alt="Une famille marche au bord du lac de l'Ouillette, prairie fleurie au premier plan">
+          <img loading="lazy" decoding="async" src="img/vd-bouquetin.webp" alt="Un bouquetin sur un versant rocheux de la Vanoise">
+          <img loading="lazy" decoding="async" src="img/fb-lac.webp" alt="Un groupe d'athlètes Acroval pique-nique au bord d'un lac d'altitude">
+        </div>
+      </article>
+      <div class="st-all">
+        <h3 class="st-claim">Toutes les activités de l'été</h3>
+        <p>Chaque lien ouvre la page correspondante sur le site officiel de Val d'Isère.</p>
+        <ul class="act-list">
+          <li><a href="https://www.valdisere.com/val-disere-en-ete/vtt-et-vttae/bike-park-tignes-val-disere/" target="_blank" rel="noopener"><b>Bike park Tignes-Val d'Isère</b><span>Pistes de descente et itinéraires VTT</span></a></li>
+          <li><a href="https://www.valdisere.com/val-disere-en-ete/vtt-et-vttae/" target="_blank" rel="noopener"><b>VTT et VTT électrique</b><span>Balades et itinéraires autour de la station</span></a></li>
+          <li><a href="https://www.valdisere.com/val-disere-en-ete/randonnees-pedestres/" target="_blank" rel="noopener"><b>Randonnées pédestres</b><span>Sentiers balisés, lacs et cols</span></a></li>
+          <li><a href="https://www.valdisere.com/val-disere-en-ete/trails/" target="_blank" rel="noopener"><b>Trails et treks</b><span>Parcours de trail running et itinérances</span></a></li>
+          <li><a href="https://www.valdisere.com/val-disere-en-ete/sur-les-parois/" target="_blank" rel="noopener"><b>Escalade et via ferrata</b><span>Escalade en montagne et via ferrata</span></a></li>
+          <li><a href="https://www.valdisere.com/val-disere-en-ete/dans-le-ciel/" target="_blank" rel="noopener"><b>Parapente et activités aériennes</b><span>Prendre de la hauteur au-dessus de la vallée</span></a></li>
+          <li><a href="https://www.valdisere.com/val-disere-en-ete/eau-vive/" target="_blank" rel="noopener"><b>Eau vive</b><span>Activités en rivière et sur les rapides</span></a></li>
+          <li><a href="https://www.valdisere.com/val-disere-en-ete/centre-aquasportif/" target="_blank" rel="noopener"><b>Centre aquasportif</b><span>Piscine, mur d'escalade, espace wellness</span></a></li>
+          <li><a href="https://www.valdisere.com/val-disere-en-ete/parcs-des-sports/vallee-du-manchet/" target="_blank" rel="noopener"><b>Parc des sports du Manchet</b><span>Tennis, pickleball, terrains de sport</span></a></li>
+          <li><a href="https://www.valdisere.com/val-disere-en-ete/parcs-des-sports/centre-du-village/" target="_blank" rel="noopener"><b>Parc des sports du centre</b><span>Équipements sportifs au cœur du village</span></a></li>
+          <li><a href="https://www.valdisere.com/val-disere-en-ete/le-parc-national-de-la-vanoise/" target="_blank" rel="noopener"><b>Parc national de la Vanoise</b><span>Faune, flore et grands espaces protégés</span></a></li>
+          <li><a href="https://www.valdisere.com/val-disere-en-ete/col-de-liseran/" target="_blank" rel="noopener"><b>Col de l'Iseran</b><span>La route des Grandes Alpes à vélo ou en sortie</span></a></li>
+          <li><a href="https://www.valdisere.com/val-disere-en-ete/remontees-gratuites-pour-les-pietons/" target="_blank" rel="noopener"><b>Remontées gratuites pour les piétons</b><span>Monter en altitude sans effort</span></a></li>
+          <li><a href="https://www.valdisere.com/evenements-animations/visites-guidees-balades/" target="_blank" rel="noopener"><b>Visites guidées et balades</b><span>Programme des sorties accompagnées</span></a></li>
+          <li><a href="https://www.valdisere.com/val-disere-en-ete/loisirs-indoors/" target="_blank" rel="noopener"><b>Activités quand il pleut</b><span>Loisirs en intérieur</span></a></li>
+        </ul>
+      </div>
+      <p class="credits">Photos de la station : Val d'Isère Tourisme (valdisere.com). Vieux village : Tiia Monto, CC BY 4.0, via Wikimedia Commons.</p>
+    </div>
+  </section>
+
+  <section class="block org" id="organisation" data-view="organisation" aria-labelledby="org-title">
+    <div class="wrap">
+      <h2 id="org-title">Ce qui est compris</h2>
+      <div class="incl">
+        <div>
+          <h3>Hébergement et repas</h3>
+          <p>Village vacances Cévéo, en pension complète. Chambres de 1 à 4 personnes. Repas au self matin, midi et soir, pour les athlètes comme pour l'encadrement. Pique-nique possible pour les journées en montagne.</p>
+        </div>
+        <div>
+          <h3>Aire d'entraînement Acroval</h3>
+          <p>Accès libre et illimité pendant tout le séjour :</p>
+          <ul><li>surface de tapis d'entraînement</li><li>piste gonflable AirTrack de 10 m</li><li>trampolines</li></ul>
+        </div>
+      </div>
+
+      <div class="gallery" aria-label="Photos des stages">
+        <div class="ph g1 has-img"><img loading="lazy" decoding="async" src="img/fb-airtrack1.webp" alt="Athlètes en échauffement sur la piste AirTrack de l'aire Acroval, montagnes et ciel bleu derrière"></div>
+        <div class="ph g2 has-img"><img loading="lazy" decoding="async" src="img/fb-poirier.webp" alt="Un athlète en équilibre sur les mains sur l'AirTrack, montagnes et ciel bleu derrière"></div>
+        <div class="ph g3 has-img"><img loading="lazy" decoding="async" src="img/fb-airtrack2.webp" alt="Une jeune gymnaste sourit sur le tapis de l'aire d'entraînement"></div>
+      </div>
+
+      <div class="incl incl-2">
+        <div>
+          <h3>Activités de la station</h3>
+          <ul><li>piscine</li><li>salle de musculation et cardio, au village vacances Cévéo</li><li>squash et badminton</li><li>mini-golf, tir à l'arc et golf</li></ul>
+          <p class="note">Musculation : à partir de 16 ans, accompagné.</p>
+        </div>
+        <div>
+          <h3>Espace wellness</h3>
+          <p>Sauna, hammam et jacuzzi.</p>
+          <p class="note">Réservé aux plus de 16 ans.</p>
+        </div>
+        <div>
+          <h3>Durée et public</h3>
+          <p>La durée du stage s'adapte à votre programme : quelques jours, une semaine ou plus. Tous les âges sont acceptés, des plus jeunes aux adultes.</p>
+        </div>
+        <div>
+          <h3>Se déplacer sur place</h3>
+          <p>Tout se fait à pied entre l'hébergement, l'aire d'entraînement et le village. Pour aller plus loin, des bus gratuits desservent toute la station.</p>
+        </div>
+      </div>
+
+      <div class="extras">
+        <div class="opt">
+          <h2 class="sub">En supplément</h2>
+          <p>Sur demande, pour compléter le séjour. Le transport n'est pas compris dans la formule de base.</p>
+          <ul>
+            <li>parcours accrobranche</li>
+            <li>équitation</li>
+            <li>soirées savoyardes : raclette, fondue</li>
+            <li>salle d'escalade</li>
+            <li>nuit en refuge</li>
+            <li>transport aller-retour jusqu'à Val d'Isère</li>
+          </ul>
+        </div>
+
+      </div>
+
+
+
+      <div class="contact" id="contact">
+        <div>
+          <h2>Organiser votre stage</h2>
+          <p class="lead">Écrivez-nous avec le nombre d'athlètes, leur âge, les disciplines, la durée et les dates qui vous intéressent. Nous vous répondons avec une proposition.</p>
+        </div>
+        <div class="lines">
+          <div class="line"><span class="k">E-mail</span><span class="v" id="c-mail"><a href="mailto:martinberthelot92@gmail.com">martinberthelot92@gmail.com</a></span><button class="copy" type="button" data-target="c-mail">Copier</button></div>
+          <div class="line"><span class="k">Téléphone</span><span class="v" id="c-tel"><a href="tel:+33630833350">06 30 83 33 50</a></span><button class="copy" type="button" data-target="c-tel">Copier</button></div>
+          <div class="line"><span class="k">Facebook</span><span class="v"><a href="https://www.facebook.com/p/Acroval-100054262010519/" target="_blank" rel="noopener">Acroval</a></span><span></span></div>
+          <div class="line"><span class="k">Instagram</span><span class="v"><a href="https://www.instagram.com/acroval_valdisere/" target="_blank" rel="noopener">@acroval_valdisere</a></span><span></span></div>
+          <div class="line"><span class="k">Lieu</span><span class="v">Val d'Isère, Savoie</span><span></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="temoignages" data-view="temoignages" aria-labelledby="tem-title">
+    <div class="wrap">
+      <h2 id="tem-title">Ils se sont entraînés à Acroval</h2>
+      <p class="lead">Des équipes de France aux clubs de compétition, voici qui s'est entraîné à Acroval l'été 2026.</p>
+      <div class="clubs">
+        <article class="club">
+          <img loading="lazy" decoding="async" src="img/edf.webp" alt="Sébastien Martiny, entraîneur national, interviewé sur l'aire d'entraînement">
+          <div class="body">
+            <h3>Équipe de France de trampoline</h3>
+            <div class="level"><span class="top">Haut niveau</span></div>
+            <p class="staff">Encadrement : <b>Sébastien Martiny</b>, entraîneur national</p>
+            <p class="ctx">Une semaine de stage pour lancer la saison : trampoline, préparation physique et activités en montagne.</p>
+            <a class="listen-link" href="https://www.youtube.com/watch?v=uOytBJCyV8A" target="_blank" rel="noopener">Écouter l'interview sur Radio Val d'Isère</a>
+          </div>
+        </article>
+        <article class="club">
+          <img loading="lazy" decoding="async" src="img/bosses.webp" alt="Benjamin Cavet et Thibaud Mouille sur l'aire d'entraînement Acroval">
+          <div class="body">
+            <h3>Équipe de France de ski de bosses</h3>
+            <div class="level"><span class="top">Olympiens</span></div>
+            <p class="staff">Athlètes : <b>Benjamin Cavet</b> et <b>Thibaud Mouille</b></p>
+            <p class="ctx">Le trampoline leur sert à travailler les repères dans l'espace et les acrobaties en dehors de la neige.</p>
+            <a class="listen-link" href="https://www.youtube.com/watch?v=wvAMvIDAHKg" target="_blank" rel="noopener">Écouter l'interview sur Radio Val d'Isère</a>
+          </div>
+        </article>
+        <article class="club">
+          <img loading="lazy" decoding="async" src="img/boyer.webp" alt="Marine Boyer sur l'aire d'entraînement Acroval">
+          <div class="body">
+            <h3>Femina Sports Monaco</h3>
+            <div class="level"><span class="top">Entraîneure triple olympienne</span></div>
+            <p class="staff">Encadrement : <b>Marine Boyer</b>, triple olympienne</p>
+            <p class="said">Le plus important, c'est d'être heureuse dans cette passion qu'est la gymnastique.</p>
+          </div>
+        </article>
+        <article class="club">
+          <img loading="lazy" decoding="async" src="img/monaco.webp" alt="Rémy Chal de Beauvais, coach de l'équipe de gymnastique acrobatique de Monaco">
+          <div class="body">
+            <h3>Gymnastique acrobatique de Monaco</h3>
+            <div class="level"><span class="top">National et international</span></div>
+            <p class="staff">Encadrement : <b>Rémy Chal de Beauvais</b>, coach de l'équipe</p>
+            <p class="said">Faire des saltos avec le ciel au-dessus de la tête et les montagnes devant, c'est quelque chose dont nous n'avons pas l'habitude.</p>
+          </div>
+        </article>
+        <article class="club">
+          <img loading="lazy" decoding="async" src="img/courbevoie.webp" alt="Joëlle Vallez, entraîneure du Trampoline Club de Courbevoie">
+          <div class="body">
+            <h3>Trampoline Club de Courbevoie</h3>
+            <div class="level"><span class="top">Compétiteurs nationaux</span></div>
+            <p class="staff">Encadrement : <b>Joëlle Vallez</b>, entraîneure</p>
+            <p class="ctx">Leur stage de reprise chaque été, avant les championnats de France par équipes de décembre.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Acroval, association loi 1901 · Val d'Isère</span>
+    <span>Stages d'été de trampoline et de gymnastique · <a href="mentions-legales.html">Mentions légales</a></span>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.copy').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var el = document.getElementById(btn.dataset.target);
+    var done = function () { btn.textContent = 'Copié'; setTimeout(function () { btn.textContent = 'Copier'; }, 1600); };
+    var fallback = function () { var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); };
+    try { navigator.clipboard.writeText(el.textContent.trim()).then(done, fallback); } catch (e) { fallback(); }
+  });
+});
+
+(function () {
+  var views = ['accueil', 'station', 'organisation', 'temoignages'];
+  var sections = document.querySelectorAll('[data-view]');
+  var links = document.querySelectorAll('nav.menu a[data-go]');
+  function show(target, scroll) {
+    var view = target === 'contact' ? 'organisation' : (views.indexOf(target) > -1 ? target : 'accueil');
+    sections.forEach(function (el) { el.hidden = el.dataset.view !== view; });
+    links.forEach(function (a) {
+      var on = a.dataset.go === view || (a.dataset.go === 'contact' && target === 'contact');
+      if (on && !a.classList.contains('cta')) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
+    });
+    if (scroll !== false) {
+      var el = target === 'contact' ? document.getElementById('contact') : null;
+      if (el) el.scrollIntoView({ block: 'start' }); else window.scrollTo(0, 0);
+    }
+    try { history.replaceState(null, '', '#' + target); } catch (e) {}
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a[data-go]');
+    if (!a) return;
+    e.preventDefault();
+    show(a.dataset.go);
+  });
+  window.addEventListener('hashchange', function () { var h = (location.hash || '').slice(1); if (h) show(h); });
+  var start = (location.hash || '').slice(1);
+  show(start || 'accueil', !!start);
+})();
+</script>
+</body>
+</html>

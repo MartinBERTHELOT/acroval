@@ -150,8 +150,8 @@ section.block .wrap { padding-block: clamp(72px, 10vw, 128px); }
 .ph img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .ph.has-img::before { display: none; }
 .ph span { position: relative; font-size: .85rem; font-weight: 600; background: var(--snow); padding: 4px 10px; border-radius: 999px; }
-.g1 { grid-column: span 3; grid-row: span 2; } .g2 { grid-column: span 1; grid-row: span 2; } .g3 { grid-column: span 2; grid-row: span 2; }
-@media (max-width: 700px) { .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 130px; } .g1 { grid-column: span 2; } .g2, .g3 { grid-column: span 1; grid-row: span 2; } }
+.g1 { grid-column: span 4; grid-row: span 2; } .g2 { grid-column: span 2; grid-row: span 2; } .g3, .g4, .g5 { grid-column: span 2; grid-row: span 2; }
+@media (max-width: 700px) { .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 130px; } .g1 { grid-column: span 2; grid-row: span 2; } .g2, .g3, .g4, .g5 { grid-column: span 1; grid-row: span 1; } }
 
 /* Ce qui est compris */
 .incl { margin-top: 32px; } .incl.incl-2 { margin-top: 16px; }
@@ -412,10 +412,12 @@ footer .wrap { padding-block: 40px; display: flex; justify-content: space-betwee
         </div>
       </div>
 
-      <div class="gallery" aria-label="Photos des stages">
-        <div class="ph g1 has-img"><img loading="lazy" decoding="async" src="img/fb-airtrack1.webp" alt="Athlètes en échauffement sur la piste AirTrack de l'aire Acroval, montagnes et ciel bleu derrière"></div>
-        <div class="ph g2 has-img"><img loading="lazy" decoding="async" src="img/fb-poirier.webp" alt="Un athlète en équilibre sur les mains sur l'AirTrack, montagnes et ciel bleu derrière"></div>
-        <div class="ph g3 has-img"><img loading="lazy" decoding="async" src="img/fb-airtrack2.webp" alt="Une jeune gymnaste sourit sur le tapis de l'aire d'entraînement"></div>
+      <div class="gallery" aria-label="Photos de l'aire d'entraînement Acroval">
+        <div class="ph g1 has-img"><img loading="lazy" decoding="async" src="img/org-saut.webp" alt="Deux trampolinistes en plein saut écart au-dessus des trampolines Acroval, télésiège et forêt en arrière-plan"></div>
+        <div class="ph g2 has-img"><img loading="lazy" decoding="async" src="img/org-vue-aire.webp" alt="Vue aérienne de l'aire d'entraînement Acroval : trampolines, tapis, piste gonflable et structures pour les enfants"></div>
+        <div class="ph g3 has-img"><img loading="lazy" decoding="async" src="img/org-acro.webp" alt="Des gymnastes s'entraînent aux portés acrobatiques sur les tapis, chalets de Val d'Isère derrière"></div>
+        <div class="ph g4 has-img"><img loading="lazy" decoding="async" src="img/org-equipe.webp" alt="Des athlètes de l'équipe de France de trampoline posent sur l'aire d'entraînement"></div>
+        <div class="ph g5 has-img"><img loading="lazy" decoding="async" src="img/org-trampolines.webp" alt="Deux athlètes sautent sur les trampolines Acroval face aux montagnes, drapeau Acroval au premier plan"></div>
       </div>
 
       <div class="incl incl-2">
